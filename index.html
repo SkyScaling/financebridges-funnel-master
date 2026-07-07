@@ -619,7 +619,7 @@ src="https://www.facebook.com/tr?id=1100120314636630&ev=PageView&noscript=1"
           '<div class="tb-sub">Real people across the country, protecting the income their families count on.</div>'+
         '</div>'+
       '</div>';
-    document.getElementById('r-form-title').textContent='See What You\'d Have To Replace.';
+    document.getElementById('r-form-title').textContent='See What You\'d Lose.';
     document.getElementById('r-form-sub').textContent='Drop your name and number and we\'ll show you exactly what\'s on the line if you couldn\'t work, and how little it costs to cover it.';
     document.getElementById('f-submit').innerHTML='See my number <span class="arrow">&rarr;</span>';
   }
@@ -644,7 +644,7 @@ src="https://www.facebook.com/tr?id=1100120314636630&ev=PageView&noscript=1"
           '<div class="num-annual">'+money(state.result.monthly)+'+ a month</div>'+
           '<div class="num-annual-cap">For as long as you’re out</div>'+
         '</div>'+
-        '<p class="r-basis" style="text-align:center;color:var(--text-3);font-size:12.5px;line-height:1.55;max-width:470px;margin:16px auto 0">Here’s the math: about '+money(state.result.monthly)+' a month, the low end of what you earn, over about two years, roughly how long a serious disability keeps the average person off work. That comes to '+money(state.result.replace)+', and it often runs longer. Your savings would cover'+state.result.runway+'. After that, the mortgage, rent, and groceries don’t stop.</p>';
+        '<p class="r-basis" style="text-align:center;color:var(--text-3);font-size:12.5px;line-height:1.55;max-width:470px;margin:16px auto 0">Here’s the math: about '+money(state.result.monthly)+' a month, the low end of what you earn, over about two years, roughly how long a serious disability keeps the average person off work. That comes to '+money(state.result.replace)+', and it often runs longer. Your savings would cover '+state.result.runway+'. After that, the mortgage, rent, and groceries don’t stop.</p>';
       var ds=diagnosis(),html='<div class="diag"><h3>What’s leaving you exposed</h3><ul>';
       ds.forEach(function(t){ html+='<li><span class="dot">'+icon('zap')+'</span><span>'+t+'</span></li>'; });
       diagWrap.innerHTML=html+'</ul></div>';
